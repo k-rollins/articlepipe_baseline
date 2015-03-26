@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>This test email is from fresher the freeliberal</h1>
+    <p>Sent on <%= Time.now.tap{ |time| time.strftime("%A, %B #{time.day.ordinalize}, in the year %Y at %-l:%M%P") } %>  
+  </body>
+</html>

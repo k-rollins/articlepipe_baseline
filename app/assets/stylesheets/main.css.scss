@@ -1,0 +1,72 @@
+body {
+  padding-left: 10px;
+}
+header {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-bottom: black 10px solid;
+}
+
+header hgroup {
+  width: 460px;
+  padding: 10px;
+}
+
+header h1 {
+  margin-top: 5px;
+  font-size: 150%;
+  color: black;
+}
+
+header a:link{
+  color: AliceBlue;
+  text-decoration: none; 
+}
+
+header a:visited{
+  color: black;
+  text-decoration: none;
+}
+
+header a:hover{
+  color: AliceBlue;
+}
+
+header h2 {
+  color: AliceBlue;
+}
+
+div#main {
+ 
+  width: 1200px;
+  height: 400px;
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+}
+
+div#profile {
+  
+  width: 300px;
+}
+div#resources {
+  float:left;
+  border-left: 2px black solid;
+  margin-left: 30px;
+  width: 300px;
+}
+div#posts {
+  float:left;
+  border-left: 2px black solid;
+  margin-left: 30px;
+  width: 400px;
+}
+div#substance {
+  padding: 25px;
+  
+  background-color: AliceBlue;
+}
+footer {
+  margin-top: 25px;
+  border-top: black 10px solid;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title><%= MySite::SITE_NAME %></title>
+  <%= stylesheet_link_tag    'application', media: 'screen', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body class="default">
+<div id="epigram">
+  <header>
+    <hgroup>
+      <h1 id="site-id"><%= link_to(MySite::SITE_NAME, root_path) %></h1>
+
+     </hgroup>
+      
+   </header>
+
+
+</div> <!--EO #epigram -->
+  <div id="substance">
+      <div id="actions_menu">
+	      <%= render "shared/sign_in_sign_out" %> 
+        <hr />	  
+      </div>
+   <% if flash[:notice] %>
+    <div class="notice"><%= flash[:notice] %></div>
+  <% end %>
+
+     
+  <div id="main">   
+    <div id="content">
+      <%= yield %>
+    </div>
+  </div> <!--EO #main -->
+  
+ 
+  </div> <!-- EO #substance --> 
+
+  <footer id="site-info">
+    <div id="epilogue">
+    <div id="masthead">
+      <h1><%= MySite::SITE_NAME %> is</h1>
+      <p><%= MySite::SITE_DESCRIPTION %></p>
+<!-- Time format from strftimer.com -->
+	  <p>created by: <%= MySite::SITE_CREATOR %> * site online since: 
+<%= MySite::SITE_ONLINE_SINCE.strftime("%B #{MySite::SITE_ONLINE_SINCE.day.ordinalize} in the Year %Y") %></p>
+  </div> <!-- EO #masthead -->
+</div> <!-- EO #epilogue -->
+</footer> <!-- EO #site-info -->
+
+
+</body>
+</html>
