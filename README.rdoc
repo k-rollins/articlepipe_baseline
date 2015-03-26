@@ -15,11 +15,11 @@ rvm gemset create article_pipe
 
 1. Create a Gmail account and configure mail with Gmail credentials
 
- Copy config/initializers/secret_params.rb.sample to secret_params.rb and fill in the missing <fields>.
+Copy config/initializers/secret_params.rb.sample to secret_params.rb and fill in the missing <fields>.
  
-  Note: the rest of the Rails.applicationconfigure code is in the config/environments directory.
+Note: the rest of the Rails.applicationconfigure code is in the config/environments directory.
 
- Rails.application.configure do
+  Rails.application.configure do
      #set <server> to be a domain name: 'example.com' or 'localhost'
 	 #set <port> to be a port number: 80 is default, Webrick uses 3000
 	 config.action_mailer.default_url_options = { :host => '<server>:<port>', :protocol => 'http'}
@@ -36,20 +36,20 @@ rvm gemset create article_pipe
 	    :domain => '<my domain>', # your domain to identify your server when connecting
 	  }
 	 config.action_mailer.perform_deliveries = true
- end
+  end
  
  
-  Note, I have prevented Git from tracking this file by adding it to the .gitignore file.
+Note, I have prevented Git from tracking this file by adding it to the .gitignore file.
   
 2. Copy config/initializers/devise.rb.sample to devise.rb
 
-   Generate new key for devise: rake secret
+2a. Generate new key for devise: 
+  rake secret
    
 3. Copy config/initializers/secrets.yml.sample to secrets.yml
 
-  Generate new key for Rails: rake secret
-
-
+3a. Generate new key for Rails: 
+  rake secret
 
 4. Add Site-Level configuration data in module MySite: config/initializers/my_site.rb
  
