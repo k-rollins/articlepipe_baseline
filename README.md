@@ -19,23 +19,23 @@ Copy config/initializers/secret_params.rb.sample to secret_params.rb and fill in
  
 Note: the rest of the Rails.applicationconfigure code is in the config/environments directory.
 
-  Rails.application.configure do
-     #set <server> to be a domain name: 'example.com' or 'localhost'
-	 #set <port> to be a port number: 80 is default, Webrick uses 3000
-	 config.action_mailer.default_url_options = { :host => '<server>:<port>', :protocol => 'http'}
-     #set <username> and <password>
-	 #set <my domain>, e.g. 'www.example.com' or 'localhost'
-	 config.action_mailer.smtp_settings = {
-	    :address   => "smtp.gmail.com",
-	    :port      => 587, # ports 587 and 2525 are also supported with STARTTLS
-	    :enable_starttls_auto => true, # detects and uses STARTTLS
-	    :user_name => "<my gmail username>,
-	    :password  => "<my gmail password>", # SMTP password is any valid API key
-	    :authentication => 'plain', # Mandrill supports 'plain' or 'login'
-	    :domain => '<my domain>', # your domain to identify your server when connecting
-	  }
-	 config.action_mailer.perform_deliveries = true
-  end
+>  Rails.application.configure do
+>     #set <server> to be a domain name: 'example.com' or 'localhost'
+>	 #set <port> to be a port number: 80 is default, Webrick uses 3000
+>	 config.action_mailer.default_url_options = { :host => '<server>:<port>', :protocol => 'http'}
+>     #set <username> and <password>
+>	 #set <my domain>, e.g. 'www.example.com' or 'localhost'
+>	 config.action_mailer.smtp_settings = {
+>	    :address   => "smtp.gmail.com",
+>	    :port      => 587, # ports 587 and 2525 are also supported with STARTTLS
+>	    :enable_starttls_auto => true, # detects and uses STARTTLS
+>	    :user_name => "<my gmail username>,
+>	    :password  => "<my gmail password>", # SMTP password is any valid API key
+>	    :authentication => 'plain', # Mandrill supports 'plain' or 'login'
+>	    :domain => '<my domain>', # your domain to identify your server when connecting
+>	  }
+>	 config.action_mailer.perform_deliveries = true
+>  end
  
  
 Note, I have prevented Git from tracking this file by adding it to the .gitignore file.
