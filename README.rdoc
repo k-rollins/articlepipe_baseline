@@ -23,8 +23,7 @@ Note: the rest of the Rails.applicationconfigure code is in the config/environme
      #set <server> to be a domain name: 'example.com' or 'localhost'
 	 #set <port> to be a port number: 80 is default, Webrick uses 3000
 	 config.action_mailer.default_url_options = { :host => '<server>:<port>', :protocol => 'http'}
-     
-	 #set <username> and <password>
+     #set <username> and <password>
 	 #set <my domain>, e.g. 'www.example.com' or 'localhost'
 	 config.action_mailer.smtp_settings = {
 	    :address   => "smtp.gmail.com",
