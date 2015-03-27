@@ -14,11 +14,6 @@
 
         rake secret
 
-<<<<<<< HEAD
-7. Generate new key for devise and enter it in devise.rb.
-    rake secret   
-=======
->>>>>>> readme_2
 8. Copy config/initializers/secrets.yml.sample to secrets.yml
 9.  Generate new key for Rails in secrets.yml:
 
