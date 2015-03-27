@@ -3,10 +3,7 @@ class Ability
 
   def initialize(user)
     
-    can :read, Feature do |resource|
-      resource.published?
-    end
-    
+
     
     #can :manage, Feature if (user && user.admin?)
    
