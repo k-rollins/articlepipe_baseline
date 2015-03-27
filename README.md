@@ -14,7 +14,6 @@
  
 6. Copy config/initializers/devise.rb.sample to devise.rb
 
-<<<<<<< HEAD
 7. Generate new key for devise and enter it in devise.rb.
     rake secret   
 8. Copy config/initializers/secrets.yml.sample to secrets.yml
