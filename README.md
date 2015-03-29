@@ -8,13 +8,13 @@
 
 3. Run `bundle install` on the command line (inside the article_pipe_baseline directory)
 4. Run `rake db:schema:load` and `rake db:migrate`
-5. Create a Gmail account. Copy config/initializers/secret_params.rb.sample to secret_params.rb and fill in the missing fields with Gmail credentials.
-6. Copy config/initializers/devise.rb.sample to devise.rb
+5. Create a Gmail account. Copy config/initializers/secret_params.rb.sample to config/initializers/secret_params.rb and fill in the missing fields with Gmail credentials.
+6. Copy config/initializers/devise.rb.sample to config/initializers/devise.rb
 7.  Generate new key for devise and enter it in devise.rb.
 
         rake secret
 
-8. Copy config/initializers/secrets.yml.sample to secrets.yml
+8. Copy config/secrets.yml.sample to config/secrets.yml
 9.  Generate new key for Rails in secrets.yml:
 
         rake secret
